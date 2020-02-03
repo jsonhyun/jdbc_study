@@ -11,4 +11,6 @@ public interface EmployeeDao {
 	Employee selectEmployeeByDno(Connection con, Department dept) throws SQLException;
 	
 	List<Employee> selectEmployeeByAll(Connection con) throws SQLException;
+	
+	List<Employee> selectEmployeeGroupByDno(Connection con, Department dept) throws SQLException;
 }

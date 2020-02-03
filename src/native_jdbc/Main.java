@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import native_jdbc.dao.EmployeeDao;
-import native_jdbc.dao.EmployeeDaoImpl;
+import native_jdbc.daoimpl.EmployeeDaoImpl;
 import native_jdbc.ds.C3P0DataSource;
 import native_jdbc.ds.DBCPDataSource;
 import native_jdbc.ds.Hikari_DataSource;

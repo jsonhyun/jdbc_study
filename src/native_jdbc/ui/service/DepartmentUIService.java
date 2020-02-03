@@ -7,7 +7,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 import native_jdbc.dao.DepartmentDao;
-import native_jdbc.dao.DepartmentDaoImpl;
+import native_jdbc.daoimpl.DepartmentDaoImpl;
 import native_jdbc.ds.MySqlDataSource;
 import native_jdbc.dto.Department;
 
