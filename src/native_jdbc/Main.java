@@ -9,7 +9,7 @@ import native_jdbc.dao.EmployeeDaoImpl;
 import native_jdbc.ds.C3P0DataSource;
 import native_jdbc.ds.DBCPDataSource;
 import native_jdbc.ds.Hikari_DataSource;
-import native_jdbc.ds.Hikari_DataSource2;
+import native_jdbc.ds.MySqlDataSource;
 import native_jdbc.dto.Employee;
 
 public class Main {
@@ -25,7 +25,7 @@ public class Main {
 //		}
 		
 		EmployeeDao dao3 = EmployeeDaoImpl.getInstance();
-		List<Employee> list = dao3.selectEmployeeByAll(Hikari_DataSource2.getConnection());
+		List<Employee> list = dao3.selectEmployeeByAll(MySqlDataSource.getConnection());
 		
 		for(Employee e:list) {
 			System.out.println(e);
@@ -53,7 +53,7 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-		try (Connection con = Hikari_DataSource2.getConnection();){
+		try (Connection con = MySqlDataSource.getConnection();){
 			System.out.println(con);
 		} catch (SQLException e) {
 			e.printStackTrace();

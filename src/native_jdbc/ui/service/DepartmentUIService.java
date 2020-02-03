@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 import native_jdbc.dao.DepartmentDao;
 import native_jdbc.dao.DepartmentDaoImpl;
-import native_jdbc.ds.Hikari_DataSource2;
+import native_jdbc.ds.MySqlDataSource;
 import native_jdbc.dto.Department;
 
 public class DepartmentUIService {
@@ -17,7 +17,7 @@ public class DepartmentUIService {
 	
 	public DepartmentUIService() {
 		try {
-			con = Hikari_DataSource2.getConnection();
+			con = MySqlDataSource.getConnection();
 			deptDao = DepartmentDaoImpl.getInstance();
 		} catch (SQLException e) {
 			JOptionPane.showMessageDialog(null, "접속 정보 확인");
