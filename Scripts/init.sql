@@ -79,6 +79,6 @@ ALTER TABLE native_jdbc_study.employee
 
 
 -- create user
-drop user 'user_native_jdbc_study'@'localhost';
-grant all privileges on myslq_study.* to 'user_native_jdbc_study'@'localhost' identified by 'rootroot';
+drop user if exists 'user_native_jdbc_study'@'localhost';
+grant all privileges on native_jdbc_study.* to 'user_native_jdbc_study'@'localhost' identified by 'rootroot';
 flush privileges;
