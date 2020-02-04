@@ -15,6 +15,10 @@ public class Department {
 		this.floor = floor;
 	}
 
+	public Department(int deptNo) {
+		this.deptNo = deptNo;
+	}
+
 	public String getDeptName() {
 		return deptName;
 	}
