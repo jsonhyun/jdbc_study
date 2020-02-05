@@ -27,7 +27,7 @@ public class Main {
 			
 			DepartmentDao dao = DepartmentDaoImpl.getInstance();
 			//추가할 부서정보
-			Department newDept = new Department("지원", 6, 60);
+			Department newDept = new Department( 6, "지원", 60);
 //			dao.insertDepartment(con, newDept);
 //			dao.updateDepartment(con, newDept);
 			dao.deleteDepartment(con, newDept);

@@ -71,7 +71,7 @@ public class DepartmentMain {
 		int deptNo = rs.getInt("deptno");
 		String deptName = rs.getString("deptname");
 		int floor = rs.getInt("floor");
-		return new Department(deptName, deptNo, floor);
+		return new Department(deptNo, deptName, floor);
 	}
 	
 	

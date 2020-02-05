@@ -65,7 +65,7 @@ public class DepartmentDaoTest {
 	@Test
 	public void test02InsertDepartment() throws SQLException {
 		LogUtil.prnLog("test02InsertDepartment()");
-		Department department = new Department("마케팅", 5, 4);
+		Department department = new Department(5, "마케팅", 4);
 		int res = dao.insertDepartment(con, department);
 		Assert.assertEquals(1, res);
 	}
@@ -73,7 +73,7 @@ public class DepartmentDaoTest {
 	@Test
 	public void test03UpdateDepartment() throws SQLException {
 		LogUtil.prnLog("test03UpdateDepartment()");
-		Department department = new Department("마케팅", 5, 4);
+		Department department = new Department(5, "마케팅", 4);
 		int res = dao.updateDepartment(con, department);
 		Assert.assertEquals(1, res);
 	}
@@ -81,7 +81,7 @@ public class DepartmentDaoTest {
 	@Test
 	public void test04DeleteDepartment() throws SQLException {
 		LogUtil.prnLog("test04DeleteDepartment()");
-		Department department = new Department("마케팅", 5, 4);
+		Department department = new Department(5, "마케팅", 4);
 		int res = dao.deleteDepartment(con, department);
 		Assert.assertEquals(1, res);
 	}

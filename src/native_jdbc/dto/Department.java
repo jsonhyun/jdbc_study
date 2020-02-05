@@ -9,7 +9,7 @@ public class Department {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Department(String deptName, int deptNo, int floor) {
+	public Department(int deptNo, String deptName, int floor) {
 		this.deptName = deptName;
 		this.deptNo = deptNo;
 		this.floor = floor;

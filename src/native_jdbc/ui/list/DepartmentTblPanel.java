@@ -39,7 +39,7 @@ public class DepartmentTblPanel extends AbstractTblPanel<Department> {
 		int deptNo = (int) model.getValueAt(selectedIdx, 0);
 		String deptName = (String) model.getValueAt(selectedIdx, 1);
 		int floor = (int) model.getValueAt(selectedIdx, 2);
-		return new Department(deptName, deptNo, floor);
+		return new Department(deptNo, deptName, floor);
 	}
 
 }
