@@ -93,7 +93,6 @@ public class TransactionServiceTest {
 	@Test
 	public void test07TransAddEmpAndDeptWithConnection_DeptFail() {
 		LogUtil.prnLog(Thread.currentThread().getStackTrace()[1].getMethodName()+"()");
-		int res = 0;
 		Department dept = new Department(1, "마케팅", 8);//존재하는 부서
 		Employee emp = new Employee(1004, "수지", "사원", new Employee(1003), 1500000, dept);
 		
@@ -103,7 +102,6 @@ public class TransactionServiceTest {
 	@Test
 	public void test08TransAddEmpAndDeptWithConnection_EmpFail() {
 		LogUtil.prnLog(Thread.currentThread().getStackTrace()[1].getMethodName()+"()");
-		int res = 0;
 		Department dept = new Department(5, "마케팅", 8);
 		Employee emp = new Employee(4377, "수지", "사원", new Employee(1003), 1500000, dept);//존재하는 사원
 		
@@ -113,7 +111,6 @@ public class TransactionServiceTest {
 	@Test
 	public void test09TransAddEmpAndDeptWithConnection_Success() {
 		LogUtil.prnLog(Thread.currentThread().getStackTrace()[1].getMethodName()+"()");
-		int res = 0;
 		Department dept = new Department(5, "마케팅", 6);
 		Employee emp = new Employee(1004, "수지", "사원", new Employee(1003), 1500000, dept);
 		
@@ -122,7 +119,6 @@ public class TransactionServiceTest {
 	@Test
 	public void test10TransRemoveEmpAndDeptWithConnection_DeptFail() {
 		LogUtil.prnLog(Thread.currentThread().getStackTrace()[1].getMethodName()+"()");
-		int res = 0;
 		Department dept = new Department(10, "마케팅", 8);//존재하지 않는 부서
 		Employee emp = new Employee(1004, "수지", "사원", new Employee(1003), 1500000, dept);
 		
@@ -132,7 +128,6 @@ public class TransactionServiceTest {
 	@Test
 	public void test11TransRemoveEmpAndDeptWithConnection_EmployeeFail() {
 		LogUtil.prnLog(Thread.currentThread().getStackTrace()[1].getMethodName()+"()");
-		int res = 0;
 		Department dept = new Department(5, "마케팅", 8);
 		Employee emp = new Employee(1005, "수지", "사원", new Employee(1003), 1500000, dept);//존재하지 않는 사원
 		
@@ -142,7 +137,6 @@ public class TransactionServiceTest {
 	@Test
 	public void test12TransRemoveEmpAndDeptWithConnection_Success() {
 		LogUtil.prnLog(Thread.currentThread().getStackTrace()[1].getMethodName()+"()");
-		int res = 0;
 		Department dept = new Department(5, "마케팅", 8);
 		Employee emp = new Employee(1004, "수지", "사원", new Employee(1003), 1500000, dept);
 		
