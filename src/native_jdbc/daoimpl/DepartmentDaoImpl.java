@@ -23,8 +23,6 @@ public class DepartmentDaoImpl implements DepartmentDao {
 		return instance;
 	}
 
-
-
 	@Override
 	public List<Department> selectDepartmentByAll(Connection con) throws SQLException {
 		String sql = "select deptno, deptname, floor from department";

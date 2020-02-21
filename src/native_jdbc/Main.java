@@ -14,6 +14,12 @@ import native_jdbc.dto.Employee;
 
 public class Main {
 	public static void main(String[] args) throws SQLException {
+		String str ="사원(5)";
+		System.out.println(str.lastIndexOf("("));
+		int startIdx = str.lastIndexOf("(")+1;
+		int endIdx = str.lastIndexOf(")");
+		System.out.println(str.substring(startIdx, endIdx));
+		
 //		EmployeeDao dao1 = new EmployeeDaoImpl();
 //		EmployeeDao dao2 = new EmployeeDaoImpl();
 //		System.out.println(dao1);
